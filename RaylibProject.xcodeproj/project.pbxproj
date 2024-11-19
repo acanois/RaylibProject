@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AE11F63C2CEBD6BC00B6EE05 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE11F63B2CEBD6BC00B6EE05 /* main.cpp */; };
+		AE4F6C3A2CED06D7006B5E3C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4F6C392CED06D7006B5E3C /* OpenGL.framework */; };
+		AE4F6C3C2CED06E9006B5E3C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4F6C3B2CED06E9006B5E3C /* CoreVideo.framework */; };
+		AE4F6C3E2CED06EF006B5E3C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4F6C3D2CED06EF006B5E3C /* IOKit.framework */; };
+		AE4F6C402CED06F5006B5E3C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4F6C3F2CED06F5006B5E3C /* Cocoa.framework */; };
+		AE4F6C422CED074D006B5E3C /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4F6C412CED074D006B5E3C /* libraylib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		AE11F6382CEBD6BC00B6EE05 /* RaylibProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RaylibProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE11F63B2CEBD6BC00B6EE05 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AE4F6C392CED06D7006B5E3C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		AE4F6C3B2CED06E9006B5E3C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		AE4F6C3D2CED06EF006B5E3C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		AE4F6C3F2CED06F5006B5E3C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AE4F6C412CED074D006B5E3C /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = ../raylib/src/libraylib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4F6C422CED074D006B5E3C /* libraylib.a in Frameworks */,
+				AE4F6C402CED06F5006B5E3C /* Cocoa.framework in Frameworks */,
+				AE4F6C3E2CED06EF006B5E3C /* IOKit.framework in Frameworks */,
+				AE4F6C3C2CED06E9006B5E3C /* CoreVideo.framework in Frameworks */,
+				AE4F6C3A2CED06D7006B5E3C /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,7 @@
 			children = (
 				AE11F63A2CEBD6BC00B6EE05 /* RaylibProject */,
 				AE11F6392CEBD6BC00B6EE05 /* Products */,
+				AE4F6C382CED06D7006B5E3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +76,18 @@
 				AE11F63B2CEBD6BC00B6EE05 /* main.cpp */,
 			);
 			path = RaylibProject;
+			sourceTree = "<group>";
+		};
+		AE4F6C382CED06D7006B5E3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE4F6C412CED074D006B5E3C /* libraylib.a */,
+				AE4F6C3F2CED06F5006B5E3C /* Cocoa.framework */,
+				AE4F6C3D2CED06EF006B5E3C /* IOKit.framework */,
+				AE4F6C3B2CED06E9006B5E3C /* CoreVideo.framework */,
+				AE4F6C392CED06D7006B5E3C /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +275,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5A5HHJ8N5;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /Users/davidrichter/prog/personal/games/raylib/src;
+				LIBRARY_SEARCH_PATHS = /Users/davidrichter/prog/personal/games/raylib/src;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -257,6 +287,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5A5HHJ8N5;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /Users/davidrichter/prog/personal/games/raylib/src;
+				LIBRARY_SEARCH_PATHS = /Users/davidrichter/prog/personal/games/raylib/src;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

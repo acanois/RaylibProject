@@ -6,9 +6,23 @@
 //
 
 #include <iostream>
+#include "raylib.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main(int argc, const char* argv[]) {
+    const int screenWidth = 1280;
+    const int screenHeight = 720;
+
+    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    
+    SetTargetFPS(60);
+    
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        EndDrawing();
+    }
+    
+    CloseWindow();
+    
     return 0;
 }
